@@ -18,7 +18,7 @@
     </marker>
   </defs>
 
-  <text x="650" y="42" text-anchor="middle" class="title">MCVS Hybrid: Monolithic MVC + Microservices with JSON Presets</text>
+  <text x="650" y="42" text-anchor="middle" class="title">MVCS Hybrid: Monolithic MVC + Microservices with JSON Presets</text>
   <text x="650" y="70" text-anchor="middle" class="subtitle">Backend = Model + Service • Frontend = View + Controller</text>
 
   <text x="190" y="110" text-anchor="middle" class="subtitle">Frontend</text>
