@@ -10,7 +10,7 @@
   </defs>
 
   <!-- Title -->
-  <text x="600" y="60" text-anchor="middle" class="title">MCVS Quadrant Circle</text>
+  <text x="600" y="60" text-anchor="middle" class="title">MVCS Quadrant Circle</text>
   <text x="600" y="90" text-anchor="middle" class="subtitle">Backend (Model + Service) | Frontend (View + Controller)</text>
 
   <!-- Main circle -->
