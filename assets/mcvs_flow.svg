@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="820" viewBox="0 0 1300 820">
+  <defs>
+    <style type="text/css"><![CDATA[
+      .title { font: 700 28px sans-serif; fill: #111;}
+      .subtitle { font: 600 18px sans-serif; fill: #333;}
+      .label { font: 600 16px sans-serif; fill: #111;}
+      .small { font: 500 14px sans-serif; fill: #222;}
+      .mono { font: 600 14px monospace; fill: #0a3d62;}
+      .box { rx: 16; ry: 16; stroke: #1f2937; stroke-width:1.5; }
+      .ghost { rx: 14; ry: 14; stroke: #64748b; stroke-dasharray:6 6; fill: #f8fafc;}
+      .tag { font: 700 12px sans-serif; fill: #fff;}
+    ]]></style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937" />
+    </marker>
+    <marker id="arrowLight" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b" />
+    </marker>
+  </defs>
+
+  <text x="650" y="42" text-anchor="middle" class="title">MCVS Hybrid: Monolithic MVC + Microservices with JSON Presets</text>
+  <text x="650" y="70" text-anchor="middle" class="subtitle">Backend = Model + Service • Frontend = View + Controller</text>
+
+  <text x="190" y="110" text-anchor="middle" class="subtitle">Frontend</text>
+  <text x="650" y="110" text-anchor="middle" class="subtitle">Gateway &amp; Contract</text>
+  <text x="1110" y="110" text-anchor="middle" class="subtitle">Backend</text>
+
+  <rect x="60" y="140" width="260" height="210" class="box" fill="#e0f2fe"/>
+  <text x="80" y="170" class="label">View</text>
+  <text x="80" y="195" class="small">• UI components (SPA)</text>
+  <text x="80" y="220" class="small">• State/UI schema from</text>
+  <text x="80" y="245" class="mono">preset.json</text>
+  <text x="80" y="270" class="small">• Render forms, tables, charts</text>
+
+  <rect x="60" y="370" width="260" height="210" class="box" fill="#dcfce7"/>
+  <text x="80" y="400" class="label">Controller</text>
+  <text x="80" y="425" class="small">• Orchestrates UI actions</text>
+  <text x="80" y="450" class="small">• Validates &amp; maps to APIs</text>
+  <text x="80" y="475" class="small">• Caching &amp; retries</text>
+
+  <rect x="470" y="210" width="360" height="160" class="ghost"/>
+  <text x="650" y="240" text-anchor="middle" class="label">JSON Presets</text>
+  <text x="650" y="265" text-anchor="middle" class="small">• UI schema • Field rules • Routes</text>
+  <text x="650" y="290" text-anchor="middle" class="small">• DTOs • Validation • Access policy</text>
+  <text x="650" y="315" text-anchor="middle" class="mono">/presets/*.json</text>
+
+  <rect x="520" y="400" width="260" height="160" class="box" fill="#fef9c3"/>
+  <text x="650" y="430" text-anchor="middle" class="label">API Gateway</text>
+  <text x="650" y="455" text-anchor="middle" class="small">• Auth, rate limit, routing</text>
+  <text x="650" y="480" text-anchor="middle" class="small">• Aggregation/GraphQL/REST</text>
+  <text x="650" y="505" text-anchor="middle" class="small">• Observability</text>
+
+  <rect x="980" y="140" width="260" height="210" class="box" fill="#fee2e2"/>
+  <text x="1000" y="170" class="label">Model</text>
+  <text x="1000" y="195" class="small">• Domain entities</text>
+  <text x="1000" y="220" class="small">• ORM/DAOs</text>
+  <text x="1000" y="245" class="small">• Validation from</text>
+  <text x="1000" y="270" class="mono">preset.json</text>
+
+  <rect x="980" y="370" width="260" height="210" class="box" fill="#fde68a"/>
+  <text x="1000" y="400" class="label">Service</text>
+  <text x="1000" y="425" class="small">• Business logic</text>
+  <text x="1000" y="450" class="small">• Integrates microservices</text>
+  <text x="1000" y="475" class="small">• Transactions/Events</text>
+
+  <rect x="920" y="610" width="360" height="150" class="ghost"/>
+  <text x="1100" y="635" text-anchor="middle" class="label">Microservices</text>
+  <g>
+    <rect x="940" y="650" width="90" height="60" class="box" fill="#fff7ed"/><text x="985" y="685" text-anchor="middle" class="small">User</text>
+    <rect x="1045" y="650" width="90" height="60" class="box" fill="#fff7ed"/><text x="1090" y="685" text-anchor="middle" class="small">Course</text>
+    <rect x="1150" y="650" width="90" height="60" class="box" fill="#fff7ed"/><text x="1195" y="685" text-anchor="middle" class="small">Billing</text>
+  </g>
+
+  <rect x="60" y="610" width="260" height="150" class="ghost"/>
+  <text x="190" y="635" text-anchor="middle" class="label">Shared Stores</text>
+  <g>
+    <rect x="85" y="650" width="90" height="60" class="box" fill="#eef2ff"/><text x="130" y="685" text-anchor="middle" class="small">Cache</text>
+    <rect x="190" y="650" width="90" height="60" class="box" fill="#eef2ff"/><text x="235" y="685" text-anchor="middle" class="small">CDN</text>
+  </g>
+
+  <line x1="320" y1="260" x2="470" y2="260" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="320" y1="475" x2="520" y2="475" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="780" y1="260" x2="980" y2="260" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="780" y1="480" x2="980" y2="480" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <line x1="650" y1="370" x2="650" y2="400" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowLight)"/>
+  <line x1="650" y1="210" x2="650" y2="140" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowLight)"/>
+
+  <rect x="40" y="760" width="1220" height="36" rx="10" ry="10" fill="#f8fafc" stroke="#e5e7eb"/>
+  <text x="60" y="784" class="small">Legend: </text>
+  <rect x="130" y="768" width="16" height="16" class="box" fill="#e0f2fe"/><text x="152" y="781" class="small">View</text>
+  <rect x="210" y="768" width="16" height="16" class="box" fill="#dcfce7"/><text x="232" y="781" class="small">Controller</text>
+  <rect x="330" y="768" width="16" height="16" class="box" fill="#fee2e2"/><text x="352" y="781" class="small">Model</text>
+  <rect x="420" y="768" width="16" height="16" class="box" fill="#fde68a"/><text x="442" y="781" class="small">Service</text>
+  <rect x="520" y="768" width="16" height="16" class="ghost" fill="#f8fafc"/><text x="542" y="781" class="small">Contract/Cluster</text>
+</svg>

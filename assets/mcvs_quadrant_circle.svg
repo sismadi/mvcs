@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <style type="text/css"><![CDATA[
+      .title { font: 700 30px sans-serif; fill: #111; }
+      .subtitle { font: 600 18px sans-serif; fill: #333; }
+      .label { font: 700 22px sans-serif; fill: #111; }
+      .mono { font: 600 15px monospace; fill: #0a3d62;}
+      .note { font: 500 14px sans-serif; fill: #334155;}
+    ]]></style>
+  </defs>
+
+  <!-- Title -->
+  <text x="600" y="60" text-anchor="middle" class="title">MCVS Quadrant Circle</text>
+  <text x="600" y="90" text-anchor="middle" class="subtitle">Backend (Model + Service) | Frontend (View + Controller)</text>
+
+  <!-- Main circle -->
+  <circle cx="600" cy="420" r="300" fill="#ffffff" stroke="#1f2937" stroke-width="3"/>
+
+  <!-- Quadrant fills -->
+  <!-- Top-Left: Model (Backend) -->
+  <path d="M600,420 L600,120 A300,300 0 0,0 387.867,187.867 Z" fill="#fee2e2"/>
+  <path d="M600,420 L387.867,187.867 A300,300 0 0,0 300,420 Z" fill="#fee2e2" opacity="0.7"/>
+  <!-- Bottom-Left: Service (Backend) -->
+  <path d="M600,420 L300,420 A300,300 0 0,0 387.867,652.133 Z" fill="#fde68a"/>
+  <path d="M600,420 L387.867,652.133 A300,300 0 0,0 600,720 Z" fill="#fde68a" opacity="0.7"/>
+  <!-- Top-Right: View (Frontend) -->
+  <path d="M600,420 L600,120 A300,300 0 0,1 812.133,187.867 Z" fill="#e0f2fe"/>
+  <path d="M600,420 L812.133,187.867 A300,300 0 0,1 900,420 Z" fill="#e0f2fe" opacity="0.7"/>
+  <!-- Bottom-Right: Controller (Frontend) -->
+  <path d="M600,420 L900,420 A300,300 0 0,1 812.133,652.133 Z" fill="#dcfce7"/>
+  <path d="M600,420 L812.133,652.133 A300,300 0 0,1 600,720 Z" fill="#dcfce7" opacity="0.7"/>
+
+  <!-- Dividing lines -->
+  <line x1="600" y1="120" x2="600" y2="720" stroke="#94a3b8" stroke-dasharray="6 6" stroke-width="2"/>
+  <line x1="300" y1="420" x2="900" y2="420" stroke="#94a3b8" stroke-dasharray="6 6" stroke-width="2"/>
+
+  <!-- Side labels -->
+  <text x="340" y="110" text-anchor="middle" class="label">Backend</text>
+  <text x="860" y="110" text-anchor="middle" class="label">Frontend</text>
+
+  <!-- Quadrant titles -->
+  <text x="460" y="300" text-anchor="middle" class="label">Model</text>
+  <text x="740" y="300" text-anchor="middle" class="label">View</text>
+  <text x="460" y="560" text-anchor="middle" class="label">Service</text>
+  <text x="740" y="560" text-anchor="middle" class="label">Controller</text>
+
+  <!-- Small notes -->
+  <text x="460" y="325" text-anchor="middle" class="note">Entities • ORM • Validation</text>
+  <text x="740" y="325" text-anchor="middle" class="note">Components • UI Schema</text>
+  <text x="460" y="585" text-anchor="middle" class="note">Business Logic • Events • Integrations</text>
+  <text x="740" y="585" text-anchor="middle" class="note">Flows • Validation • API Calls</text>
+
+  <!-- Bottom banner -->
+  <rect x="300" y="760" width="600" height="70" rx="16" ry="16" fill="#fef9c3" stroke="#1f2937" stroke-width="1.5"/>
+  <text x="600" y="803" text-anchor="middle" class="label">Shared Contract: <tspan class="mono">preset.json</tspan></text>
+</svg>
