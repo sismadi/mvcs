@@ -1,6 +1,10 @@
-# MVCS Hybrid (Monolithic MVC + Microservices) + JSON Preset
+# MVCS Hybrid (Monolithic MVC + Microservices) dengan JSON Preset
 
-Preset berbasis **JSON Preset** mengatur perilaku UI (komponen, rute, validasi) sekaligus memetakan endpoint **Service** dan skema data **Model** agar front-end bersifat *config-driven*.
+Konsep **MVCS** memecah tanggung jawab menjadi dua belahan besar:
+- **Backend = Model + Service**  
+- **Frontend = View + Controller**
+
+Preset berbasis **JSON** mengatur perilaku UI (komponen, rute, validasi) sekaligus memetakan endpoint *Service* dan skema data *Model* agar *front-end* bisa bersifat *config-driven*.
 
 ---
 
